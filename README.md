@@ -90,7 +90,7 @@ apt-add-repository ppa:ansible/ansible
 ```  
 4. to run copilot
 ```bash
-> cd /usr/share/ceph-ansible  
+> cd /usr/local/ceph-ansible  
 > copilot
 ```  
 

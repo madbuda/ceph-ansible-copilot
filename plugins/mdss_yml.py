@@ -5,7 +5,7 @@ import shutil
 from ceph_ansible_copilot.utils import get_used_roles
 
 description = "use the existing mdss.yml, or create one from the sample"
-yml_file = '/usr/share/ceph-ansible/group_vars/mdss.yml'
+yml_file = '/usr/local/ceph-ansible/group_vars/mdss.yml'
 
 
 def plugin_main(config=None):

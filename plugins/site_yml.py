@@ -7,7 +7,7 @@ from collections import OrderedDict
 from ceph_ansible_copilot.utils import get_used_roles
 
 description = "use the existing site.yml, or create one from the sample"
-yml_file = '/usr/share/ceph-ansible/site.yml'
+yml_file = '/usr/local/ceph-ansible/site.yml'
 
 # The sample file includes a host entry for each role, but if the role isn't
 # supported by copilot, the playbook generates warning messages that disrupt
@@ -80,7 +80,7 @@ def plugin_main(config=None, mode='add'):
 
 def manage_all_yml(yaml_data, mode):
 
-    all_vars_file = '/usr/share/ceph-ansible/group_vars/all.yml'
+    all_vars_file = '/usr/local/ceph-ansible/group_vars/all.yml'
     pre_req_tasks = yaml_data[0]['tasks']
 
     if mode == 'add':

@@ -29,7 +29,7 @@ from ceph_ansible_copilot.ui import (UI_Welcome,
 
 from ceph_ansible_copilot.ui.palette import palette
 
-CEPH_ANSIBLE_ROOT = '/usr/share/ceph-ansible'
+CEPH_ANSIBLE_ROOT = '/usr/local/ceph-ansible'
 
 
 def unknown_input(key):
@@ -65,7 +65,7 @@ class Config(Settings):
         self.defaults.osd_objectstore = 'filestore'
         self.defaults.sw_src = 'RH CDN'
         self.defaults.dmcrypt = 'standard'
-        self.defaults.playbook = '/usr/share/ceph-ansible/site.yml'
+        self.defaults.playbook = '/usr/local/ceph-ansible/site.yml'
 
         self.hosts = None
 
@@ -448,7 +448,7 @@ if __name__ == "__main__":
 
     opts = parse_cli_options()
 
-    # check that the cwd is /usr/share/ceph-ansible to pick up the correct
+    # check that the cwd is /usr/local/ceph-ansible to pick up the correct
     # environment (cfg, plugins, actions etc)
     if os.getcwd() != CEPH_ANSIBLE_ROOT:
         print("-> copilot must be started from the {} "

@@ -3,7 +3,7 @@
 from ceph_ansible_copilot.utils import valid_yaml
 
 description = "Create a osds.yml file to control osd creation"
-yml_file = '/usr/share/ceph-ansible/group_vars/osds.yml'
+yml_file = '/usr/local/ceph-ansible/group_vars/osds.yml'
 
 
 def plugin_main(config=None):

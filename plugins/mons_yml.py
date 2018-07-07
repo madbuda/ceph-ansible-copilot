@@ -6,7 +6,7 @@ import shutil
 from ceph_ansible_copilot.utils import get_used_roles, valid_yaml, get_pgnum
 
 description = "use the existing mons.yml, or create one from the sample"
-yml_file = '/usr/share/ceph-ansible/group_vars/mons.yml'
+yml_file = '/usr/local/ceph-ansible/group_vars/mons.yml'
 
 
 def plugin_main(config=None):

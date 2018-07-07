@@ -5,7 +5,7 @@ import shutil
 
 
 description = "use the existing mgrs.yml, or create one from the sample"
-yml_file = '/usr/share/ceph-ansible/group_vars/mgrs.yml'
+yml_file = '/usr/local/ceph-ansible/group_vars/mgrs.yml'
 
 
 def plugin_main(config=None):

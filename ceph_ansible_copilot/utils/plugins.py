@@ -16,7 +16,7 @@ class Plugin(object):
 
 class PluginMgr(object):
 
-    def __init__(self, plugin_dir='/usr/share/ceph-ansible-copilot/plugins',
+    def __init__(self, plugin_dir='/usr/local/ceph-ansible-copilot/plugins',
                  logger=None):
 
         self.logger = logger

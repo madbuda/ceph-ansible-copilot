@@ -135,7 +135,7 @@ def valid_yaml(yml_data):
         return True
 
 
-def setup_ansible_cfg(ceph_ansible_dir='/usr/share/ceph-ansible'):
+def setup_ansible_cfg(ceph_ansible_dir='/usr/local/ceph-ansible'):
     """
     update the ansible.cfg file in the ceph-ansible directory to turn off
     deprecation warnings. The original file is saved, for restoration after
@@ -178,7 +178,7 @@ def setup_ansible_cfg(ceph_ansible_dir='/usr/share/ceph-ansible'):
         cfg_file.write(c)
 
 
-def restore_ansible_cfg(ceph_ansible_dir='/usr/share/ceph-ansible'):
+def restore_ansible_cfg(ceph_ansible_dir='/usr/local/ceph-ansible'):
     """
     if a backup copy exists, restore the ansible.cfg file in the ceph-ansible
     directory and then remove our backup copy

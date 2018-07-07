@@ -47,7 +47,7 @@ setup(
     scripts=[
         'copilot.py'
     ],
-    data_files=[('/usr/share/ceph-ansible-copilot/plugins',
+    data_files=[('/usr/local/ceph-ansible-copilot/plugins',
                  ['plugins/all_yml.py', 'plugins/ansible_hosts.py',
                   'plugins/mdss_yml.py', 'plugins/mgrs_yml.py',
                   'plugins/mons_yml.py', 'plugins/osds_yml.py',

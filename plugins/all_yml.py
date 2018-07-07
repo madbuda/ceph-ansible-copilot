@@ -6,7 +6,7 @@ import platform
 from ceph_ansible_copilot.utils import valid_yaml
 
 description = "define the base variables"
-yml_file = '/usr/share/ceph-ansible/group_vars/all.yml'
+yml_file = '/usr/local/ceph-ansible/group_vars/all.yml'
 
 
 def plugin_main(config=None):
